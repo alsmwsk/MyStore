@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:contentPadding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-10-31"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_news"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/book_sample"/>
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="150dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/image_news"
+                android:layout_marginLeft="20dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="News Title"/>
+
+            <TextView
+                android:id="@+id/news_desc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image_news"
+                android:layout_below="@id/news_title"
+                android:layout_marginLeft="20dp"
+                android:maxLength="6"
+                android:text="Description"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
